@@ -10,5 +10,14 @@
 -author("orieken").
 -include_lib("eunit/include/eunit.hrl").
 
-%%send_three_returns_fizz_test() ->
-%%  ?assertEqual('fizz', fizzbuzz(3)).
+fizz_at_three_test() ->
+  Value = fizzbuzz:fizzbuzz(lists:seq(1, 3)),
+  ?assertEqual(Value, ["1", "2", "Fizz"]).
+
+fizzbuzz_at_fifteen_test() ->
+  Value = fizzbuzz:fizzbuzz(lists:seq(1, 15)),
+  ?assertEqual(Value, ["1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz", "11", "Fizz", "13", "14", "FizzBuzz"]).
+
+%fizz_buzz_two_at_three_test() ->
+%  Value = fizzbuzz:fizz_buzz_two(1, 3),
+%  ?assertEqual(Value, ["1", "2", "Fizz"]).
