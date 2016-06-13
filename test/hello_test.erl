@@ -11,3 +11,5 @@
 
 -include_lib("eunit/include/eunit.hrl").
 
+hello_world_test() ->
+  ?assertEqual(hello:start(), ok).

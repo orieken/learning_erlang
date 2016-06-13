@@ -12,8 +12,6 @@
 %% API
 -export([fizzbuzz/1, fizz_buzz_two/2 ]).
 
-%%fizzbuzz(number) ->
-%%  number.
 
 fizzbuzz(List) ->
   F = fun(N) when N rem 15 == 0 -> "FizzBuzz";
